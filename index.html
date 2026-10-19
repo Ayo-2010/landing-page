@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulse — Ship faster, stress less</title>
+  <meta name="description" content="Pulse is the all-in-one workspace for modern product teams.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a href="#" class="brand">
+        <span class="brand-dot"></span> Pulse
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="link-muted">Sign in</a>
+        <a href="#pricing" class="btn btn-sm">Get started</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero container">
+      <span class="pill reveal">✨ New — AI summaries are live</span>
+      <h1 class="reveal">Ship faster.<br><span class="grad">Stress less.</span></h1>
+      <p class="hero-sub reveal">
+        Pulse brings your tasks, docs and conversations into one calm workspace,
+        so your team can focus on work that actually matters.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#pricing" class="btn btn-lg">Start free trial</a>
+        <a href="#features" class="btn btn-lg btn-outline">See how it works</a>
+      </div>
+      <p class="hero-note reveal">No credit card required · Free for 14 days</p>
+
+      <div class="app-preview reveal">
+        <div class="app-bar">
+          <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+          <span class="app-title">pulse / dashboard</span>
+        </div>
+        <div class="app-body">
+          <aside class="app-side">
+            <span class="side-item active"></span>
+            <span class="side-item"></span>
+            <span class="side-item"></span>
+            <span class="side-item"></span>
+          </aside>
+          <div class="app-main">
+            <div class="app-row">
+              <div class="app-card tall">
+                <span class="mini-label">Tasks completed</span>
+                <span class="mini-value" data-count="1284">0</span>
+                <div class="sparkline">
+                  <i style="height:40%"></i><i style="height:65%"></i><i style="height:45%"></i>
+                  <i style="height:80%"></i><i style="height:60%"></i><i style="height:95%"></i>
+                </div>
+              </div>
+              <div class="app-card">
+                <span class="mini-label">Team velocity</span>
+                <span class="mini-value" data-count="92" data-suffix="%">0</span>
+              </div>
+            </div>
+            <div class="app-row">
+              <div class="app-card wide">
+                <span class="mini-label">Active projects</span>
+                <div class="bars">
+                  <span style="width:88%"></span>
+                  <span style="width:64%"></span>
+                  <span style="width:42%"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="logos container reveal">
+      <p>Trusted by fast-moving teams at</p>
+      <div class="logo-row">
+        <span>Northwind</span>
+        <span>Vertex</span>
+        <span>Lumen</span>
+        <span>Kite</span>
+        <span>Orbital</span>
+      </div>
+    </section>
+
+    <section class="features container" id="features">
+      <div class="section-head reveal">
+        <span class="kicker">Features</span>
+        <h2>Everything your team needs, nothing it doesn't</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature reveal">
+          <div class="feature-icon">⚡</div>
+          <h3>Lightning fast</h3>
+          <p>Sub-50ms interactions. Pulse feels instant, even with thousands of tasks.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-icon">🧠</div>
+          <h3>AI summaries</h3>
+          <p>Catch up on any project in seconds with automatic thread summaries.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-icon">🔒</div>
+          <h3>Secure by default</h3>
+          <p>SOC 2 Type II, end-to-end encryption and granular role controls.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-icon">🔗</div>
+          <h3>Integrates everywhere</h3>
+          <p>Slack, GitHub, Figma, Google Drive — connect your whole stack in a click.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-icon">📊</div>
+          <h3>Real-time insights</h3>
+          <p>Dashboards that update live so you always know where things stand.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-icon">🌙</div>
+          <h3>Calm by design</h3>
+          <p>Thoughtful defaults and quiet notifications keep distraction low.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="pricing container" id="pricing">
+      <div class="section-head reveal">
+        <span class="kicker">Pricing</span>
+        <h2>Simple plans that scale with you</h2>
+        <label class="billing-toggle reveal">
+          <span>Monthly</span>
+          <input type="checkbox" id="billingToggle">
+          <span class="switch"></span>
+          <span>Yearly <em>–20%</em></span>
+        </label>
+      </div>
+      <div class="price-grid">
+        <article class="price-card reveal">
+          <h3>Starter</h3>
+          <p class="price-desc">For individuals getting organized.</p>
+          <p class="price"><span data-monthly="0" data-yearly="0">$0</span><small>/mo</small></p>
+          <ul class="price-list">
+            <li>Up to 3 projects</li>
+            <li>Basic integrations</li>
+            <li>Community support</li>
+          </ul>
+          <a href="#" class="btn btn-outline btn-block">Get started</a>
+        </article>
+
+        <article class="price-card featured reveal">
+          <span class="badge">Most popular</span>
+          <h3>Pro</h3>
+          <p class="price-desc">For growing teams that move fast.</p>
+          <p class="price"><span data-monthly="19" data-yearly="15">$19</span><small>/user/mo</small></p>
+          <ul class="price-list">
+            <li>Unlimited projects</li>
+            <li>AI summaries & automations</li>
+            <li>All integrations</li>
+            <li>Priority support</li>
+          </ul>
+          <a href="#" class="btn btn-block">Start free trial</a>
+        </article>
+
+        <article class="price-card reveal">
+          <h3>Enterprise</h3>
+          <p class="price-desc">For organizations with scale needs.</p>
+          <p class="price"><span data-monthly="49" data-yearly="39">$49</span><small>/user/mo</small></p>
+          <ul class="price-list">
+            <li>SSO & SCIM</li>
+            <li>Advanced security</li>
+            <li>Dedicated success manager</li>
+            <li>99.99% SLA</li>
+          </ul>
+          <a href="#" class="btn btn-outline btn-block">Contact sales</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="faq container" id="faq">
+      <div class="section-head reveal">
+        <span class="kicker">FAQ</span>
+        <h2>Questions, answered</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item reveal" open>
+          <summary>Is there really a free plan?</summary>
+          <p>Yes. The Starter plan is free forever for up to 3 projects and one workspace.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Can I switch plans later?</summary>
+          <p>Anytime. Upgrades are prorated automatically and downgrades take effect next cycle.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Do you offer discounts for nonprofits?</summary>
+          <p>We offer 50% off for registered nonprofits and educational institutions. Just reach out.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>How do you handle my data?</summary>
+          <p>Your data is encrypted in transit and at rest. We never train models on your content.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="cta container reveal">
+      <h2>Ready to find your focus?</h2>
+      <p>Join 20,000+ teams already building with Pulse.</p>
+      <form class="cta-form" id="ctaForm" novalidate>
+        <input type="email" id="emailInput" placeholder="you@company.com" aria-label="Email address" required>
+        <button type="submit" class="btn">Get started</button>
+      </form>
+      <p class="cta-msg" id="ctaMsg" role="status"></p>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div class="footer-top">
+      <a href="#" class="brand"><span class="brand-dot"></span> Pulse</a>
+      <div class="footer-cols">
+        <div>
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#">Changelog</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Pulse Inc. All rights reserved.</p>
+      <p>Built with HTML, CSS & JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
